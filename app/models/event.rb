@@ -13,5 +13,6 @@ class Event < ActiveRecord::Base
 
     if start_time >= end_time
       errors.add(:start_time, 'は終了時間よりも前に設定してください')
+    end
   end
 end
